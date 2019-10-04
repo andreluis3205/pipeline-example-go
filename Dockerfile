@@ -1,4 +1,2 @@
-FROM golang:1.11
+FROM andreluis3205/gisp
 EXPOSE 80
-COPY ./bin/hello-server /usr/local/bin/
-CMD ["hello-server"]
