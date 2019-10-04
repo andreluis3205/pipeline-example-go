@@ -1,15 +1,8 @@
 stages:
-- name: Build
-  steps:
-  - runScriptConfig:
-      image: andreluis3205/gisp
 - name: Publish
   steps:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: 
-- name: Deploy
-  steps:
-  - applyYamlConfig:
-      path: ./deployment.yaml
+
