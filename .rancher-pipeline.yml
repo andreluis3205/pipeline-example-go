@@ -3,6 +3,3 @@ stages:
   steps:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
-      buildContext: .
-      tag: 
-
